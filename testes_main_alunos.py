@@ -8,6 +8,11 @@ class TestCalculadora(unittest.TestCase):
     def teste_operacoes_basicas(self):
         # Teste operações básicas de cada operador + - * / % ^
         self.assertEqual(calculadora(2, 3, '+'), 5)
+        self.assertEqual(calculadora(5, 2, '-'), 3)
+        self.assertEqual(calculadora(4, 3, '*'), 12)
+        self.assertEqual(calculadora(10, 2, '/'), 5)
+        self.assertEqual(calculadora(10, 3, '%'), 1)
+        self.assertEqual(calculadora(2, 3, '^'), 8)
 
     def teste_v2_operacoes(self):
         # Teste operações básicas de cada operador + - * / % ^
