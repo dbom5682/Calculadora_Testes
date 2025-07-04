@@ -14,7 +14,7 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(calculadora(10, 3, '%'), 1)
         self.assertEqual(calculadora(2, 3, '^'), 8)
 
-    def teste_v2_operacoes(self):
+    def teste_v2_operacoes_basicas(self):
         # Teste operações básicas de cada operador + - * / % ^
         self.assertEqual(calculadora_v2(2, 3, '+'), 5)
         self.assertEqual(calculadora_v2(5, 2, '-'), 3)
@@ -23,7 +23,7 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(calculadora_v2(10, 3, '%'), 1)
         self.assertEqual(calculadora_v2(2, 3, '^'), 8)
 
-    def teste_v3_operacoes(self):
+    def teste_v3_operacoes_basicas(self):
         # Teste operações básicas de cada operador + - * / % ^
         self.assertEqual(calculadora_v3(2, 3, '+'), 5)
         self.assertEqual(calculadora_v3(5, 2, '-'), 3)
@@ -32,7 +32,7 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(calculadora_v3(10, 3, '%'), 1)
         self.assertEqual(calculadora_v3(2, 3, '^'), 8)
 
-    def teste_v4_operacoes(self):
+    def teste_v4_operacoes_basicas(self):
         # Teste operações básicas de cada operador + - * / % ^
         self.assertEqual(calculadora_v4(2, 3, '+'), 5)
         self.assertEqual(calculadora_v4(5, 2, '-'), 3)
@@ -71,6 +71,8 @@ class TestCalculadora(unittest.TestCase):
 
   #v2
 
+    def teste_operacoes_diversas_v2(self):
+
   # Teste divisão por zero operador para todas versões / %
         self.assertTrue(math.isnan(calculadora_v2(5, 0, '/')))
         self.assertTrue(math.isnan(calculadora_v2(5, 0, '%')))
@@ -100,7 +102,7 @@ class TestCalculadora(unittest.TestCase):
 
 #v3
 
-    def teste_operacoes_diversas(self):
+    def teste_operacoes_diversas_v3(self):
         # Teste divisão por zero operador para todas versões / %
         self.assertTrue(math.isnan(calculadora_v3(5, 0, '/')))
         self.assertTrue(math.isnan(calculadora_v3(5, 0, '%')))
@@ -130,7 +132,7 @@ class TestCalculadora(unittest.TestCase):
 
 #v4
 
-    def teste_operacoes_diversas(self):
+    def teste_operacoes_diversas_v4(self):
         # Teste divisão por zero operador para todas versões / %
         self.assertTrue(math.isnan(calculadora_v4(5, 0, '/')))
         self.assertTrue(math.isnan(calculadora_v4(5, 0, '%')))
